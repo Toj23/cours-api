@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des Cours</title>
+    <link rel="stylesheet" href="src/main/acme/resources/static/style.css">
+</head>
+<body>
+    <h2>Liste des Cours</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Titre</th>
+                <th>Description</th>
+                <th>Professeur</th>
+            </tr>
+        </thead>
+        <tbody>
+            {#for c in cours}
+                <tr>
+                    <td>{c.titre}</td>
+                    <td>{c.description}</td>
+                    <td>{c.professeur}</td>
+                </tr>
+            {/for}
+        </tbody>
+    </table>
+</body>
+</html>
